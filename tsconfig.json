@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    // "baseUrl": ".",
+    // "paths": {
+    //   "svg/*": ["src/svg/*"],
+    //   "components/*": ["src/components/*"],
+    // },
     "target": "es5",
     "lib": [
       "dom",
@@ -21,6 +26,8 @@
     "jsx": "react-jsx"
   },
   "include": [
+    "./src/index.d.ts",
+    // ".src/components/*",
     "src"
   ]
 }
