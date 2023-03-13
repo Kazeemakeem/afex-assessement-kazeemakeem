@@ -17,7 +17,7 @@ const Main = () => {
       <Header />
       <div className="grid grid-cols-3 px-12 mt-20 flex justify-between items-center gap-12">
         <ChartCard tag="Cash Balance" amount="N 8,374,763" trend="Decline" chart={chart_1}/>
-        <ChartCard tag="Security Value" amount="N 8,374,763" trend="Decline" chart={chart_2}/>
+        <ChartCard tag="Securities Value" amount="N 8,374,763" trend="Decline" chart={chart_2}/>
         <ChartCard tag="Loan Balance" amount="N 8,374,763" trend="Increment" chart={chart_3}/>
       </div>
       <NavBar />
