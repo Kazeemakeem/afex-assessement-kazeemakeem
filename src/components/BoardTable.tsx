@@ -24,7 +24,7 @@ export const  Table: React.FC<TableProps> = ({ title, headers, rows, type}) => {
         <div className="flex flex-row text-sm font-semibold mb-2 px-4 py-2 text-gray-800 rounded shadow text-xl"
         key={index} > 
           {row.map((data, index) => (
-            <div key={index} className={`text-${index === 0 || index === 1 ? "left" : "center"} px-4 w-full ${index === row.length - 2 || index === row.length - 1 ? `${index === row.length - 1 ? `${type === "buy" ? "bg-green-50" : `${type === "sell" ? "bg-red-50" : ""}`}` : ""} ${type === "buy" ? "text-green-500" : `${type === "sell" ? "text-red-500" : ""}`}` : ""}`}>{data}</div>)) 
+            <div key={index} className={`${index === 0 || index === 1 ? "text-left" : "text-center"} px-4 w-full ${index === row.length - 2 || index === row.length - 1 ? `${index === row.length - 1 ? `${type === "buy" ? "bg-green-50" : `${type === "sell" ? "bg-red-50" : ""}`}` : ""} ${type === "buy" ? "text-green-500" : `${type === "sell" ? "text-red-500" : ""}`}` : ""}`}>{data}</div>)) 
         }  
         </div>))
       }
