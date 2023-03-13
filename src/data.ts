@@ -46,3 +46,7 @@ export const logBoardData = {
     ["SoyBean(SSBS)", "", "Sell", "1792.65", "2003", "17 Oct, 2020", "07:38"],
   ]
 }
+
+export const boardCat = ["X-Rated", "OTC" , "FI", "Derivatives"]
+
+export const prodCodes = ["All", "SBBS", "SPRL", "SGNG", "SCOC", "SMAZ", "SGNG", "SSGM", "FETC"]

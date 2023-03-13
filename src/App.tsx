@@ -1,14 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-// import './App.css';
 import AsideNav from './components/AsideNav';
 import Main from './components/Main';
+import Modal from './components/Modal';
 
 function App() {
   return (
-    <h1 className="h-screen grid grid-cols-[1fr_20fr]">
+    <h1 className="h-screen grid grid-cols-[1fr_20fr] relative">
       <AsideNav />
       <Main />
+      <Modal />
     </h1>
   );
 }
