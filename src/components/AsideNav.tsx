@@ -16,7 +16,7 @@ const setIconIndex = (positionIndex: Number) => {
 const AsideNav = () => {
 
   const navIcon = (Icon: React.ReactElement, hoverText: String, positionIndex: Number) => (
-    <div className="relative">
+    <div key={positionIndex as number} className="relative">
       <div 
       onClick={() => setIconIndex(positionIndex as React.SetStateAction<number>)}
       className={`flex items-center justify-center z-0 group ${positionIndex === iconIndex ? "bg-gray-100" : ""} w-16 h-16 rounded-lg cursor-pointer`}>

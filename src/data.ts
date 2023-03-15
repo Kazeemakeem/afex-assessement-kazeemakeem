@@ -43,7 +43,7 @@ export const logBoardData = {
     ["Sorghum(SSGM)", "FI", "Buy", "1792.65", "2003", "17 Oct, 2020", "07:38"],
     ["Fair Trade ETC(FETC)", "FI", "Buy", "1792.65", "2003", "17 Oct, 2020", "07:38"],
     ["SoyBean(SSBS)", "X-Traded", "Sell", "1792.65", "2003", "17 Oct, 2020", "07:38"],
-    ["SoyBean(SSBS)", "", "Sell", "1792.65", "2003", "17 Oct, 2020", "07:38"],
+    ["SoyBean(SSBS)", "X-Traded", "Sell", "1792.65", "2003", "17 Oct, 2020", "07:38"],
   ]
 }
 

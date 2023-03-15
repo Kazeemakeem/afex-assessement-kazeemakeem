@@ -16,10 +16,13 @@ const NavBar = () => {
   const navListItems = ["Product View", "Order Book", "Price History", "Open Orders", "Closed Trades", "Canceled Trades"]
   
   return (
-    <div className="px-12 mt-20">
+    <div className="px-12 mt-12">
       <ul className='flex gap-12 font-semibold text-gray-400 text-2xl pt-3 h-full'>
         {navListItems.map((item, index) => (
-          index > 2 ? navItem(item, 20, index) : navItem(item, null, index)
+          <div key={index}>
+            {index > 2 ? navItem(item, 20, index) : navItem(item, null, index)}
+          </div>
+          
         ))}
       </ul>
     </div>
