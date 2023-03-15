@@ -31,7 +31,7 @@ const Modal = () => {
       <div 
         onClick={() => dispatch(toggleModal(!modalOpen))}
         className="absolute h-[120rem] w-[80rem] sm:h-screen sm:w-screen bg-black opacity-50 z-1000 col-span-2 top-0 left-0"></div>
-      <div className="absolute top-48 right-[-14rem] sm:right-56 h-[56rem] w-[46rem] bg-white p-12 rounded-3xl">
+      <div className="absolute top-48 right-[-20rem] sm:right-56 h-[56rem] w-[46rem] bg-white p-12 rounded-3xl">
         <div className="w-12 h-12 bg-white absolute top-[-1rem] right-28 translate transform rotate-45"></div>
         <h2 className="text-4xl font-semibold text-gray-700">Page Settings</h2>
         <div className="text-2xl mt-16 flex flex-col gap-8">
