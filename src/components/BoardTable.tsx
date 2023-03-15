@@ -29,6 +29,6 @@ export const  Table: React.FC<TableProps> = ({ title, headers, rows, type}) => {
         }  
         </div>))
       }
-    </div> : <div className="text-3xl font-bold"><p>Loading...</p></div>
+    </div> : <div className="text-3xl font-bold"><p>Loading trade data...</p></div>
   )
 }

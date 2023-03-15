@@ -45,7 +45,7 @@ const LiveMarket = () => {
               />
             </div>
           </div>
-        )) : <div className="text-3xl font-bold"><p>Loading...</p></div>}
+        )) : <div className="text-3xl font-bold"><p>Loading data...</p></div>}
       </Marquee>
     </div>
   )
