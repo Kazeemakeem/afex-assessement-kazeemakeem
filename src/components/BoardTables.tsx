@@ -24,12 +24,12 @@ const BoardTables = () => {
     socket.addEventListener("message", (e) => {
       const response = JSON.parse(e.data);
       // @ts-ignore
-      const tradeData = response?.data?.messages
+      const tradeData = response.messages
 
       const monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]
      // @ts-ignore
       const tradeDataRows = tradeData.reduce( ( acc, next ) => {
-        const { security_code, commodity_code, units, matched_qty, board_type, order_type, order_price, updated, created } = next
+        const { security_code, units, board_type, order_type, order_price, updated } = next
         const decryptedArr = [ security_code, board_type, order_type, order_price, units, updated ]
             .map(item => decrypt(item))
         const dateAndTIme = decryptedArr.pop() as string
