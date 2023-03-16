@@ -11,6 +11,7 @@ interface TableProps {
 export const  Table: React.FC<TableProps> = ({ title, headers, rows, type}) => {
 
   return (
+    rows.length ? 
     <div className="flex flex-col border border-1 border-gray-100 shadow rounded-2xl pb-0 pt-4">
        
        <h2 className="text-2xl font-bold mb-4 mx-8">{title}</h2>
@@ -28,6 +29,6 @@ export const  Table: React.FC<TableProps> = ({ title, headers, rows, type}) => {
         }  
         </div>))
       }
-    </div>
+    </div> : <div className="text-3xl font-bold"><p>Loading trade data...</p></div>
   )
 }
